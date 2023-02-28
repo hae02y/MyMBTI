@@ -13,12 +13,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/result.css">
     <title>뭘먹을까요?</title>
 
 </head>
 <body>
-    <section id="main" class="mx-auto mt-5 py-5 px-3">
-        <h3>음식테스트</h3>
+    <section id="main" class="mx-auto my-5 py-5 px-3">
+        <h1>음식 테스트</h1>
         <div class="col-lg-6 col-md-8 col-sm-6 mx-auto">
         <img src="https://cdn.pixabay.com/photo/2017/09/30/15/10/plate-2802332_960_720.jpg" alt="mainImage" class="img-fluid">
         </div>
@@ -27,13 +28,25 @@
         <button type="button" class="btn btn-danger mt-3" onclick="js:begin()">시작하기</button>
     </section>
     <section id="qna">
-        <div class="qBox"></div>
+        <div class="status mt-3 mx-auto">
+            <div class="statusBar"></div>
+        </div>
+        <div class="qBox my-5 py-3 mx-auto"></div>
 
         <div class="answerBox"></div>
     </section>
 
     <section id="result">
+        <h1>당신의 결과는?</h1>
+        <div class="resultName">
 
+        </div>
+        <div id="resultImg" class="col-lg-6 col-md-8 col-sm-6 mx-auto">
+        </div>
+        <div class="resultDesc">
+
+        </div>
+        <button type="button">공유하기</button>
     </section>
 
 
